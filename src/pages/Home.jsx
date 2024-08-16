@@ -19,19 +19,44 @@ function Home() {
 
   // Track the current message index
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showSecondButton, setShowSecondButton] = useState(false);
+  const [showFirstButton, setShowFirstButton] = useState(true);
 
-  // Function to update the message when the button is clicked
+
   const handleClick = () => {
-    // Move to the next message, looping back to the first one if needed
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % messages.length);
+    if (messages[currentIndex] === 'I love you') {
+      setShowSecondButton(true); // Show the second button when the final message is displayed
+      setShowFirstButton(false);
+    } else {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % messages.length);
+    }
   };
+
+  const handleSecondButtonClick = () => {
+    alert('MAHAL NA MAHAL ULIT KITA!!');
+  };
+  
 
   return (
     <div className="flex flex-col items-center justify-center h-screen text-center">
       <h1 className="text-3xl font-bold mb-4">{messages[currentIndex]}</h1>
-      <Button onClick={handleClick} className="bg-blue-500 text-white px-4 py-2 rounded">
+
+      {showFirstButton && (<Button
+        onClick={handleClick}
+        className="bg-blue-500 text-white px-4 py-2 rounded mb-4"
+      >
         Click mo ito
-      </Button>
+      </Button>)}
+
+      
+      {showSecondButton && (
+        <Button
+          onClick={(handleSecondButtonClick)}
+          className="bg-green-500 text-white px-4 py-2 rounded"
+        >
+          Click mo last na
+        </Button>
+      )}
     </div>
   );
 }
