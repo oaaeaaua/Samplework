@@ -1,0 +1,20 @@
+/* src/components/Button.css */
+.custom-button {
+    background-color: #FFD1DF;
+    color: hotpink;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #FFD1DF;
+  }
+  

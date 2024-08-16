@@ -1,45 +1,45 @@
-/* src/CSS Folders/Header.css */
 .header {
-    background-color: #333;
-    padding: 1rem;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure it stays on top of other content */
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Ensure it takes the full height of the header */
-  }
-  
-  .nav-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  .nav-item {
-    margin: 0 1rem;
-  }
-  
-  .nav-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .nav-link:hover {
-    text-decoration: underline;
-  }
-  
-  /* Optional: Add some spacing below the header if content is hidden behind it */
-  body {
-    margin-top: 4rem; /* Adjust based on header height */
-  }
-  
+  background-color: #FFD1DF; /* Soft Pink for the header background */
+  padding: 1rem;
+  color: #333; /* Darker text color for contrast */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it takes the full height of the header */
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  color: #333; /* Dark text color for links */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #FF1493; /* Hot Pink for hover effect */
+  text-decoration: underline;
+}
+
+/* Optional: Add some spacing below the header if content is hidden behind it */
+body {
+  margin-top: 4rem; /* Adjust based on header height */
+}
