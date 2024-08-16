@@ -9,7 +9,14 @@ function Header() {
       <nav className="nav">
         <ul className="nav-list">
           <li className="nav-item">
-            <Link className="nav-link" to="/">Home</Link>
+            <a 
+              className="nav-link" 
+              href="https://www.messenger.com/t/100000683513983" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Ito pwede mo kausapin if bored ka
+            </a>
           </li>
         </ul>
       </nav>
