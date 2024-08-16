@@ -15,7 +15,7 @@ function Header() {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              Click mo Ito pwede mo kausapin if bored ka
+              Click to be with your forever
             </a>
           </li>
         </ul>
